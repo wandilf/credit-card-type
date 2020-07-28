@@ -10,8 +10,7 @@
     "test": "jest",
     "prepublishOnly": "npm run build",
     "prebuild": "prettier --write .",
-    "build": "tsc --declaration",
-    "postinstall": "cd ./node_modules/credit-card-type && npm install && npm run build"
+    "build": "tsc --declaration"
   },
   "repository": {
     "type": "git",

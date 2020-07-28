@@ -10,7 +10,8 @@
     "test": "jest",
     "prepublishOnly": "npm run build",
     "prebuild": "prettier --write .",
-    "build": "tsc --declaration"
+    "build": "tsc --declaration",
+    "postinstall": "cd ./node_modules/credit-card-type && npm install && npm run build"
   },
   "repository": {
     "type": "git",
@@ -28,9 +29,6 @@
     "ts-jest": "^26.1.3",
     "typescript": "^3.9.7"
   },
-  "precommit": [
-    "build"
-  ],
   "jest": {
     "preset": "ts-jest",
     "testEnvironment": "node",

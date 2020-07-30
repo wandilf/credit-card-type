@@ -10,7 +10,8 @@
     "test": "jest",
     "prepublishOnly": "npm run build",
     "prebuild": "prettier --write .",
-    "build": "tsc --declaration"
+    "build": "tsc --declaration",
+    "postinstall": "npm install && npm run build"
   },
   "repository": {
     "type": "git",

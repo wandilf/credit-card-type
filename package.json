@@ -11,7 +11,7 @@
     "prepublishOnly": "npm run build",
     "prebuild": "prettier --write .",
     "build": "tsc --declaration",
-    "prepare": "npm run build"
+    "prepare": "npm run build && npm test && npm run lint"
   },
   "repository": {
     "type": "git",
